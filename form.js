@@ -182,28 +182,6 @@ validateNext = (page_no) =>{
     }
 }
 
-createBubble =()=> {
-
-    const outer = document.querySelector('.outer_animation');
-    const bubble = document.createElement('span');
-    let size = Math.random() * 60;
-    
-    bubble.style.width = size + 130 + 'px';
-    bubble.style.height = size + 130 + 'px';
-    bubble.style.left = Math.random() * innerWidth + 'px';
-    outer.appendChild(bubble);
-    
-    setTimeout(()=>{
-
-        bubble.remove();
-
-    },10000)
-}
-
-// .....
-
-setInterval(createBubble,800);
-
 page_number = 0;
 pages[0].classList.add("active"); 
 

@@ -1,3 +1,3 @@
-# Multi Step Form #
+# Regisnow #
 
-This is a multi step form project made with basic front-end web development technologies, i.e. HTML, CSS & JAVASCRIPT.
+This is a multi step form made using HTML, CSS & JAVASCRIPT.

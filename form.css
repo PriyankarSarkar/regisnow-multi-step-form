@@ -9,30 +9,7 @@ body{
     min-height: 100vh;
     background-color: black;
 }
-.outer_animation{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: -200px;
-    overflow: hidden;
-}
-.outer_animation span:before{
-    animation: color_flow 1.8s linear infinite;
-}
-.outer_animation span{
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(120deg,rgb(148, 141, 141), rgba(204, 152, 152, 0));
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 1;
-    animation: bubble_animation 20s linear infinite;
-    backdrop-filter: blur(8px);
-}
+
 .parent_div{
     justify-content: center;
     height: 100%;
@@ -221,21 +198,6 @@ a{
 .link{
     margin: 0px 5px;
 }
-
-@keyframes bubble_animation {
-    0%{
-        transform: translateY(100%);
-    }
-    100%{
-        transform: translateY(-1200%);
-    }
-}
-
-@keyframes color_flow {
-    100% {
-      filter: hue-rotate(360deg);
-    }
-  }
 
 @media(max-width: 500px){
     .progress_bar{
