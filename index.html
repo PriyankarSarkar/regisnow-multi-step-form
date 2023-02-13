@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-step-form</title>
+
+    <link rel="stylesheet" href="./form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+    <script src="./form.js" defer></script>
+  </head>
+  <body>
+    <div class="outer_animation"></div>
+
+    <div class="parent_div">
+      <form class="main_form" id="main_form">
+        <h2 class="formhead">Multi Step Form</h2>
+
+        <div id="progress_bar" class="progress_bar">
+          <div class="progress_bar_movement"></div>
+
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+
+        <div class="page page_1">
+          <h2 class="page_header">Account Setup</h2>
+
+          <div class="input_div_style">
+            <input
+              type="email"
+              id="email"
+              class="input"
+              name="email"
+              placeholder="Email*"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="input_div_style">
+            <input
+              type="password"
+              id="password"
+              class="input"
+              name="password"
+              placeholder="Password*"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="input_div_style">
+            <input
+              type="password"
+              id="conf_password"
+              class="input"
+              name="conf_password"
+              placeholder="Confirm Password*"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="next each_button" step-next>
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="page page_2">
+          <h2 class="page_header">Social Media Presence</h2>
+
+          <div class="input_div_style">
+            <input
+              type="text"
+              id="facebook"
+              class="input"
+              name="facebook"
+              placeholder="Facebook"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="input_div_style">
+            <input
+              type="text"
+              id="twitter"
+              class="input"
+              name="twitter"
+              placeholder="Twitter"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="input_div_style">
+            <input
+              type="text"
+              id="linkedin"
+              class="input"
+              name="linkedin"
+              placeholder="LinkedIn"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="previous each_button" step-previous>
+              Previous
+            </button>
+            <button type="button" class="next each_button" step-next>
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="page page_3">
+          <h2 class="page_header">Personal Details</h2>
+
+          <div class="input_div_style">
+            <input
+              type="text"
+              id="first_name"
+              class="input"
+              name="first_name"
+              placeholder="First Name*"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="input_div_style">
+            <input
+              type="text"
+              id="middle_name"
+              class="input"
+              name="middle_name"
+              placeholder="Middle Name"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="input_div_style">
+            <input
+              type="text"
+              id="last_name"
+              class="input"
+              name="last_name"
+              placeholder="Last Name*"
+              autocomplete="off"
+            />
+            <img
+              id="right"
+              class="icon_check invisible"
+              src="./blue_tick.png"
+            />
+            <img id="wrong" class="icon_check invisible" src="./wrong.png" />
+            <small id="msg" class="error invisible">ErrorMsg</small>
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="previous each_button" step-previous>
+              Previous
+            </button>
+            <input
+              type="submit"
+              class="each_button"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </div>
+
+        <div class="social">
+          <a class="link" href="">Multi-step-form</a> 
+          by
+          <a class="link" href="https://www.linkedin.com/in/priyankar-sarkar" target="_blank">
+            Priyankar Sarkar
+          </a>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
