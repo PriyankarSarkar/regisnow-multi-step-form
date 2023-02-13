@@ -238,7 +238,7 @@ main_form.addEventListener('submit', element = (event) => {
 
     event.preventDefault();
     
-    if(validateNext(page_number) === true)
+    if(validateNext(2) === true)
     {
         swal
         ({
